@@ -1,0 +1,57 @@
+-- MySQL dump 10.13  Distrib 8.0.43, for Win64 (x86_64)
+--
+-- Host: localhost    Database: trafficdb
+-- ------------------------------------------------------
+-- Server version	8.0.43
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `traffic_points`
+--
+
+DROP TABLE IF EXISTS `traffic_points`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `traffic_points` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `city` varchar(255) DEFAULT NULL,
+  `cluster_label` varchar(255) DEFAULT NULL,
+  `density` double NOT NULL,
+  `lat` double NOT NULL,
+  `lon` double NOT NULL,
+  `speed` double NOT NULL,
+  `timestamp` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `traffic_points`
+--
+
+LOCK TABLES `traffic_points` WRITE;
+/*!40000 ALTER TABLE `traffic_points` DISABLE KEYS */;
+INSERT INTO `traffic_points` VALUES (1,'Bangalore',NULL,0,12.9501,77.6102,25,'2025-11-05 09:01:00'),(2,'Bangalore',NULL,0,12.9515,77.612,28,'2025-11-05 09:02:00'),(3,'Bangalore',NULL,0,12.9498,77.6098,22,'2025-11-05 09:03:00'),(4,'Bangalore',NULL,0,12.9489,77.6111,26,'2025-11-05 09:04:00'),(5,'Bangalore',NULL,0,12.9522,77.6105,24,'2025-11-05 09:05:00'),(6,'Bangalore',NULL,0,12.949,77.6107,20,'2025-11-05 09:06:00'),(7,'Bangalore',NULL,0,12.9512,77.6099,27,'2025-11-05 09:07:00'),(8,'Bangalore',NULL,0,13.0002,77.6503,48,'2025-11-05 09:01:00'),(9,'Bangalore',NULL,0,13.0025,77.652,55,'2025-11-05 09:02:00'),(10,'Bangalore',NULL,0,13.0018,77.6495,52,'2025-11-05 09:03:00'),(11,'Bangalore',NULL,0,13.0009,77.651,58,'2025-11-05 09:04:00'),(12,'Bangalore',NULL,0,13.0031,77.6515,45,'2025-11-05 09:05:00'),(13,'Bangalore',NULL,0,13.002,77.6501,50,'2025-11-05 09:06:00'),(14,'Bangalore',NULL,0,13.0011,77.6498,53,'2025-11-05 09:07:00'),(15,'Bangalore',NULL,0,13.0705,77.6908,72,'2025-11-05 09:01:00'),(16,'Bangalore',NULL,0,13.0692,77.691,80,'2025-11-05 09:02:00'),(17,'Bangalore',NULL,0,13.0715,77.6925,75,'2025-11-05 09:03:00'),(18,'Bangalore',NULL,0,13.0701,77.6932,68,'2025-11-05 09:04:00'),(19,'Bangalore',NULL,0,13.0699,77.6918,77,'2025-11-05 09:05:00'),(20,'Bangalore',NULL,0,13.072,77.6922,71,'2025-11-05 09:06:00'),(21,'Bangalore',NULL,0,13.0708,77.6904,74,'2025-11-05 09:07:00');
+/*!40000 ALTER TABLE `traffic_points` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-11-05 16:07:06
