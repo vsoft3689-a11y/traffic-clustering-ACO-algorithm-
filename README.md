@@ -37,18 +37,18 @@ The system allows users to upload CSV datasets containing latitude, longitude, s
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/vsoft3689-a11y/Traffic-Clustering.git
+   git clone https://github.com/vsoft3689-a11y/traffic-clustering-ACO-algorithm-.git
    ```
 
 2. Navigate to the project folder:
 
    ```bash
-   cd Traffic-Clustering
+   cd traffic-clustering
    ```
 
 3. Configure the database:
 
-   - Open MySQL and create a database named `traffic_data`
+   - Open MySQL and create a database named `trafficdb`
    - Update `application.properties` with your database credentials
 
 4. Build and run the project:
